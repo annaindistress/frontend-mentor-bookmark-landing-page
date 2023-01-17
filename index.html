@@ -8,6 +8,49 @@
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 <body class="page">
+  <header class="page__header header">
+    <div class="header__container">
+      <a class="header__link">
+        <svg class="header__logo">
+          <title>Bookmark logo</title>
+          <use xlink:href="/images/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <button class="header__toggle" type="button">Toggle menu</button>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Features</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Pricing</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Contact</a>
+          </li>
+        </ul>
+        <a class="navigation__button button button--header" href="#">Login</a>
+        <ul class="navigation__social social">
+          <li>
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--facebook">
+                <title>Link to our facebook</title>
+                <use xlink:href="/images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--twitter">
+                <title>Link to our twitter</title>
+                <use xlink:href="/images/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <script type="module" src="./script.js"></script>
 </body>

@@ -6,3 +6,19 @@
 
 @import './styles/box-sizing.css';
 
+@import './styles/button.css';
+@import './styles/social.css';
+
+@import './styles/page.css';
+@import './styles/header.css';
+@import './styles/navigation.css';
+
+/* Variables */
+
+:root {
+  --primary-blue: 231, 69%, 60%;
+  --primary-red: 0, 94%, 66%;
+  --neutral-gray: 229, 8%, 60%;
+  --neutral-blue: 229, 31%, 21%;
+  --white: 0, 0%, 100%;
+}
