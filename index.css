@@ -1,1 +1,8 @@
-@import url('./styles/box-sizing.css');
+/* Fonts */
+
+@import './styles/fonts.css';
+
+/* Components */
+
+@import './styles/box-sizing.css';
+
