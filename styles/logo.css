@@ -1,0 +1,29 @@
+.logo {
+  width: 149px;
+  height: 25px;
+}
+
+.logo__image {
+  --circle-color: hsl(var(--primary-blue));
+  --flag-color: white;
+
+  width: 100%;
+  height: 100%;
+}
+
+.logo--dark .logo__image {
+  --text-color: hsl(var(--neutral-blue));
+}
+
+.logo--light .logo__image {
+  --text-color: white;
+}
+
+@media (max-width: 767px) {
+
+  .logo--white .logo__image {
+    --text-color: white;
+    --circle-color: white;
+    --flag-color: hsl(var(--neutral-blue));
+  }
+}

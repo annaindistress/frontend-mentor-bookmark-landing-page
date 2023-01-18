@@ -6,12 +6,15 @@
 
 @import './styles/box-sizing.css';
 
+@import './styles/logo.css';
 @import './styles/button.css';
 @import './styles/social.css';
 
 @import './styles/page.css';
 @import './styles/header.css';
 @import './styles/navigation.css';
+
+@import './styles/footer.css';
 
 /* Variables */
 

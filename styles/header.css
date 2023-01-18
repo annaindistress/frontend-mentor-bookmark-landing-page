@@ -12,19 +12,8 @@
   margin: 0 auto;
 }
 
-.header__link {
-  grid-area: logo;
-  width: 149px;
-  height: 25px;
-}
-
 .header__logo {
-  --text-color: hsl(var(--neutral-blue));
-  --circle-color: hsl(var(--primary-blue));
-  --flag-color: white;
-
-  width: 149px;
-  height: 25px;
+  grid-area: logo;
 }
 
 .header__toggle {
@@ -60,12 +49,6 @@
 
   .header--open .header__container {
     min-height: calc(100vh - 60px);
-  }
-
-  .header--open .header__logo {
-    --text-color: white;
-    --circle-color: white;
-    --flag-color: hsl(var(--neutral-blue));
   }
 }
 
