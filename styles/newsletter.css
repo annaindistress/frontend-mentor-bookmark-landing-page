@@ -1,0 +1,121 @@
+.newsletter {
+  display: grid;
+  justify-content: center;
+  padding: 60px 32px 38px;
+  color: white;
+  background-color: hsl(var(--primary-blue));
+}
+
+.newsletter__title {
+  max-width: 423px;
+  margin: 0 0 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.08px;
+  text-align: center;
+}
+
+.newsletter__stats {
+  grid-row: 1 / 2;
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 40px;
+  letter-spacing: 4.62px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.newsletter__form {
+  display: grid;
+}
+
+.newsletter__field {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+}
+
+.newsletter__field--error {
+  position: relative;
+  background-color: hsl(var(--primary-red));
+}
+
+.newsletter__field--error::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('./images/icon-error.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.newsletter__input {
+  padding: 9px 20px 7px;
+  padding-right: 52px;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: hsl(var(--neutral-blue));
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.newsletter__field--error .newsletter__input {
+  border-color: hsl(var(--primary-red));
+}
+
+.newsletter__input::placeholder {
+  color: hsla(var(--neutral-blue), .25);
+}
+
+.newsletter__error {
+  padding: 4px 12px 6px;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.25px;
+
+}
+
+.newsletter__button {
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+
+  .newsletter {
+    padding: 58px 0 74px;
+  }
+
+  .newsletter__title {
+    margin-bottom: 36px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.1px;
+  }
+
+  .newsletter__stats {
+    margin-bottom: 24px;
+    font-size: 13px;
+    letter-spacing: 5px;
+  }
+
+  .newsletter__form {
+    grid-template-columns: 300px 1fr;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .newsletter__button {
+    margin-top: 0;
+  }
+}

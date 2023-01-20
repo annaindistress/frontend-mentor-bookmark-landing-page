@@ -1,58 +1,68 @@
 .button {
+  --height: 44px;
+  --primary-color: hsl(var(--primary-blue));
+  --secondary-color: white;
+
   display: block;
-  padding: 12px 32px;
+  min-height: var(--height);
+  padding: 0 24px;
   font-family: inherit;
   font-weight: 500;
-  text-decoration: none;
+  font-size: 14px;
+  line-height: var(--height);
+  letter-spacing: .25px;
   text-align: center;
-  color: var(--text-color);
-  background-color: var(--bg-color);
-  border: 2px solid var(--border-color);
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color);
   border-radius: 5px;
-}
-
-.button--header {
-  --text-color: white;
-  --bg-color: transparent;
-  --border-color: white;
-
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: 2.31px;
-  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
+  color: var(--main-color);
+  background-color: var(--secondary-color);
   outline: none;
 }
 
-.button--header:hover,
-.button--header:focus {
-  --text-color: hsl(var(--primary-red));
-  --border-color: hsl(var(--primary-red));
+.button--danger {
+  --main-color: hsl(var(--primary-red));
+}
+
+.button--login {
+  font-size: 20px;
+  letter-spacing: 2.31px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+
+  .button--login {
+    --main-color: transparent;
+    --secondary-color: white;
+
+    border-color: var(--secondary-color);
+  }
+
+  .button--login:hover,
+  .button--login:focus {
+    --main-color: hsl(var(--primary-red));
+    --secondary-color: transparent;
+
+    border-color: var(--main-color);
+  }
 }
 
 @media (min-width: 768px) {
 
-  .button {
-    padding-top: 12px;
-    padding-bottom: 11px;
-  }
+  .button--login {
+    --height: 36px;
 
-  .button--header {
-    --text-color: white;
-    --bg-color: hsl(var(--primary-red));
-    --border-color: hsl(var(--primary-red));
-
+    padding: 0 32px;
     font-size: 13px;
-    line-height: 17px;
     letter-spacing: 1.5px;
-  }
-
-  .button--header:hover,
-  .button--header:focus {
-    --text-color: hsl(var(--primary-red));
-    --bg-color: white;
   }
 }
