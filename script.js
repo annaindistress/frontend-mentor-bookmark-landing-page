@@ -25,7 +25,10 @@ newsletterInput.addEventListener('input', () => {
 newsletterForm.addEventListener('submit', evt => {
   evt.preventDefault();
 
-  if (!newsletterInput.validity.valid) {
+  if (
+    !newsletterInput.validity.valid &&
+    !newsletterField.classList.contains('newsletter__field--error')
+  ) {
     newsletterField.classList.add('newsletter__field--error');
 
     const errorMessage = document.createElement('span');
