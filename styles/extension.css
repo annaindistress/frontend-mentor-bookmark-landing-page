@@ -1,0 +1,118 @@
+.extension {
+  margin-bottom: 140px;
+}
+
+.extension__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 52px;
+  letter-spacing: -.08px;
+  text-align: center;
+  color: hsl(var(--neutral-blue));
+}
+
+.extension__lead {
+  width: calc(100% - 64px);
+  max-width: 470px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.extension__list {
+  display: grid;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.extension__item {
+  position: relative;
+  width: 280px;
+  padding: 24px;
+  padding-top: 185px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px -5px hsla(231, 58%, 55%, .2);
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  background-size: auto 100px;
+}
+
+.extension__item--chrome {
+  background-image: url('/images/logo-chrome.svg');
+}
+
+.extension__item--firefox {
+  background-image: url('/images/logo-firefox.svg');
+}
+
+.extension__item--opera {
+  background-image: url('/images/logo-opera.svg');
+}
+
+.extension__item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 96px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-image: url('/images/bg-dots.svg');
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+.extension__browser {
+  margin: 0 0 6px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23.7px;
+  color: hsl(var(--neutral-blue));
+}
+
+.extension__version {
+  margin: 0 0 60px;
+}
+
+@media (min-width: 768px) {
+
+  .extension {
+    margin-bottom: 150px;
+  }
+
+  .extension__title {
+    margin-bottom: 16px;
+    font-size: 32px;
+    letter-spacing: -.1;
+  }
+
+  .extension__lead {
+    max-width: 540px;
+    margin-bottom: 48px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .extension__list {
+    grid-template-columns: repeat(3, 280px);
+    gap: 35px;
+  }
+
+  .extension__item {
+    height: 371px;
+  }
+
+  .extension__item:nth-child(2) {
+    margin-top: 40px;
+  }
+
+  .extension__item:nth-child(3) {
+    margin-top: 80px;
+  }
+}
