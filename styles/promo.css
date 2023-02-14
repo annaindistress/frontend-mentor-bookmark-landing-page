@@ -1,0 +1,121 @@
+.promo {
+  position: relative;
+  margin-block-end: 100px;
+  padding: 300px 32px 0;
+  background-image: url('/images/illustration-hero.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 210px;
+  overflow: hidden;
+}
+
+.promo::before {
+  content: '';
+  position: absolute;
+  inset-block-start: 45px;
+  inset-inline-start: calc(50% - 94px);
+  z-index: -1;
+  display: block;
+  width: calc((100% - 67px) * 2);
+  height: 203px;
+  background-color: hsl(var(--primary-blue));
+  border-radius: 316px;
+}
+
+.promo__title {
+  max-width: 540px;
+  margin: 0 auto 16px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: .09px;
+  text-transform: capitalize;
+  text-align: center;
+  color: hsl(var(--neutral-blue));
+}
+
+.promo__text {
+  max-width: 540px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.promo__buttons {
+  display: grid;
+  gap: 14px;
+  max-width: 343px;
+  margin: 0 auto;
+  padding-block-end: 40px;
+}
+
+.promo__button {
+  padding-inline: 12px;
+}
+
+@media (min-width: 375px) {
+
+  .promo__buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+
+  .promo {
+    padding-block-start: 525px;
+    background-size: 579px auto;
+  }
+
+  .promo::before {
+    inset-block-start: 125px;
+    inset-inline-start: calc(50% - 132px);
+    height: 352px;
+  }
+
+  .promo__title {
+    margin-block-end: 24px;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: .15px;
+  }
+
+  .promo__text {
+    margin-block-end: 32px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .promo__buttons {
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .promo {
+    margin-block-end: 40px;
+    padding-block: 71px 123px;
+    padding-inline: 0;
+    background-position-x: calc(50% + 308px);
+  }
+
+  .promo::before {
+    inset-inline-start: calc(50% + 180px);
+  }
+
+  .promo__title,
+  .promo__text {
+    position: relative;
+    inset-inline-start: 50%;
+    margin-inline-start: 0;
+    text-align: left;
+    transform: translateX(-550px);
+  }
+
+  .promo__buttons {
+    position: relative;
+    inset-inline-start: 50%;
+    margin-inline-start: 0;
+    transform: translateX(-550px);
+  }
+}

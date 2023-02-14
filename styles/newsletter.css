@@ -47,8 +47,8 @@
 .newsletter__field--error::after {
   content: '';
   position: absolute;
-  top: 14px;
-  right: 18px;
+  inset-block-start: 14px;
+  inset-inline-end: 18px;
   display: block;
   width: 20px;
   height: 20px;
@@ -59,7 +59,7 @@
 
 .newsletter__input {
   padding: 9px 20px 7px;
-  padding-right: 52px;
+  padding-inline-end: 52px;
   font-size: 14px;
   line-height: 28px;
   letter-spacing: 0.25px;
@@ -87,7 +87,7 @@
 }
 
 .newsletter__button {
-  margin-top: 16px;
+  margin-block-start: 16px;
 }
 
 @media (min-width: 768px) {
@@ -97,14 +97,14 @@
   }
 
   .newsletter__title {
-    margin-bottom: 36px;
+    margin-block-end: 36px;
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -0.1px;
   }
 
   .newsletter__stats {
-    margin-bottom: 24px;
+    margin-block-end: 24px;
     font-size: 13px;
     letter-spacing: 5px;
   }
@@ -116,6 +116,6 @@
   }
 
   .newsletter__button {
-    margin-top: 0;
+    margin-block-start: 0;
   }
 }

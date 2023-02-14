@@ -35,6 +35,17 @@
   --shadow: none;
 }
 
+.button--secondary {
+  --primary-color: hsl(0, 0%, 97%);
+  --secondary-color: hsla(var(--neutral-blue), .75);
+}
+
+.button--secondary:hover,
+.button--secondary:focus {
+  --primary-color: hsla(var(--neutral-blue), .75);
+  --secondary-color: white;
+}
+
 .button--login {
   font-size: 20px;
   letter-spacing: 2.31px;

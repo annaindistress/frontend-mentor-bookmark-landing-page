@@ -1,5 +1,5 @@
 .features {
-  margin-bottom: 70px;
+  margin-block-end: 70px;
 }
 
 .features__title {
@@ -25,7 +25,7 @@
   margin: 0 auto 72px;
   padding: 0;
   list-style: none;
-  border-top: 1px solid hsla(var(--neutral-blue), .15);
+  border-block-start: 1px solid hsla(var(--neutral-blue), .15);
 }
 
 .features__tab-link {
@@ -39,7 +39,7 @@
   text-decoration: none;
   text-align: center;
   color: hsla(var(--neutral-blue), .75);
-  border-bottom: 1px solid hsla(var(--neutral-blue), .15);
+  border-block-end: 1px solid hsla(var(--neutral-blue), .15);
   outline: none;
 }
 
@@ -55,8 +55,8 @@
 .features__tab-link[aria-selected]::after {
   content: '';
   position: absolute;
-  left: 50%;
-  bottom: 0;
+  inset-inline-start: 50%;
+  inset-block-end: 0;
   display: block;
   width: 143px;
   height: 4px;
@@ -92,8 +92,8 @@
 .features__tab-content::before {
   content: '';
   position: absolute;
-  top: 50px;
-  right: calc(50% - 94px);
+  inset-block-start: 50px;
+  inset-inline-end: calc(50% - 94px);
   z-index: -1;
   display: block;
   width: calc((100% - 67px) * 2);
@@ -123,11 +123,11 @@
 @media (min-width: 768px) {
 
   .features {
-    margin-bottom: 150px;
+    margin-block-end: 150px;
   }
 
   .features__title {
-    margin-bottom: 16px;
+    margin-block-end: 16px;
     font-size: 32px;
     letter-spacing: -.1;
   }
@@ -141,18 +141,17 @@
   .features__tabs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-top: none;
+    border-block-start: none;
   }
 
   .features__tab-link[aria-selected]::after {
-    left: 0;
-    right: 0;
+    inset-inline: 0;
     width: auto;
     transform: translateX(0);
   }
 
   .features__tab-content {
-    padding-top: 452px;
+    padding-block-start: 452px;
   }
 
   .features__tab-content--bookmark {
@@ -168,19 +167,19 @@
   }
 
   .features__tab-content::before {
-    top: 85px;
-    right: calc(50% - 132px);
+    inset-block-start: 85px;
+    inset-inline-end: calc(50% - 132px);
     height: 352px;
   }
 
   .features__subtitle {
-    margin-bottom: 16px;
+    margin-block-end: 16px;
     font-size: 32px;
     letter-spacing: -.1px;
   }
 
   .features__text {
-    margin-bottom: 32px;
+    margin-block-end: 32px;
     font-size: 18px;
     line-height: 28px;
   }
@@ -190,15 +189,14 @@
 
   .features__tab-content {
     max-width: 100%;
-    padding-top: 60px;
-    padding-left: 58%;
-    padding-bottom: 145px;
+    padding-block: 60px 145px;
+    padding-inline-start: 58%;
     text-align: left;
     background-position-x: calc(50% - 265px);
   }
 
   .features__tab-content::before {
-    right: 58%;
+    inset-inline-end: 58%;
   }
 
   .features__text {
@@ -206,6 +204,6 @@
   }
 
   .features__button {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 }

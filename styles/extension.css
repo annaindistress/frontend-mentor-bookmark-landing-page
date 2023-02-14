@@ -1,5 +1,5 @@
 .extension {
-  margin-bottom: 140px;
+  margin-block-end: 140px;
 }
 
 .extension__title {
@@ -32,7 +32,7 @@
   position: relative;
   width: 280px;
   padding: 24px;
-  padding-top: 185px;
+  padding-block-start: 185px;
   text-align: center;
   border-radius: 15px;
   box-shadow: 0 10px 20px -5px hsla(231, 58%, 55%, .2);
@@ -56,8 +56,8 @@
 .extension__item::after {
   content: '';
   position: absolute;
-  left: 0;
-  bottom: 96px;
+  inset-inline-start: 0;
+  inset-block-end: 96px;
   display: block;
   width: 100%;
   height: 4px;
@@ -81,18 +81,18 @@
 @media (min-width: 768px) {
 
   .extension {
-    margin-bottom: 150px;
+    margin-block-end: 150px;
   }
 
   .extension__title {
-    margin-bottom: 16px;
+    margin-block-end: 16px;
     font-size: 32px;
     letter-spacing: -.1;
   }
 
   .extension__lead {
     max-width: 540px;
-    margin-bottom: 48px;
+    margin-block-end: 48px;
     font-size: 18px;
     line-height: 28px;
   }
@@ -109,10 +109,10 @@
   }
 
   .extension__item:nth-child(2) {
-    margin-top: 40px;
+    margin-block-start: 40px;
   }
 
   .extension__item:nth-child(3) {
-    margin-top: 80px;
+    margin-block-start: 80px;
   }
 }

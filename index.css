@@ -9,11 +9,10 @@
 @import './styles/logo.css';
 @import './styles/button.css';
 @import './styles/social.css';
-
 @import './styles/page.css';
 @import './styles/header.css';
 @import './styles/navigation.css';
-
+@import './styles/promo.css';
 @import './styles/features.css';
 @import './styles/extension.css';
 @import './styles/faq.css';

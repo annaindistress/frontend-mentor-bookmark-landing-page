@@ -51,7 +51,7 @@
   .footer__navigation {
     grid-template-columns: repeat(3, 1fr);
     gap: 44px;
-    margin-right: auto;
+    margin-inline-end: auto;
     font-size: 13px;
     letter-spacing: 1.5px;
   }
@@ -60,7 +60,6 @@
 @media (min-width: 1200px) {
 
   .header {
-    padding-left: 0;
-    padding-right: 0;
+    padding-inline: 0;
   }
 }
