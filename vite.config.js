@@ -9,4 +9,5 @@ export default defineConfig({
       ],
     },
   },
+  build: '/frontend-mentor-bookmark-landing-page/',
 });
