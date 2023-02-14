@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <script type="module" crossorigin src="/assets/index-3a8abf9c.js"></script>
+  <link rel="stylesheet" href="/assets/index-d9dad446.css">
+</head>
+<body class="page">
+  <header class="page__header header">
+    <div class="header__container">
+      <a class="header__logo logo logo--dark">
+        <svg class="logo__image">
+          <title>Bookmark logo</title>
+          <use xlink:href="/images/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <button class="header__toggle" type="button">Toggle menu</button>
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Features</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Pricing</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Contact</a>
+          </li>
+        </ul>
+        <a class="navigation__button button button--danger button--login" href="#">Login</a>
+        <ul class="navigation__social social">
+          <li>
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--facebook">
+                <title>Link to our facebook</title>
+                <use xlink:href="/images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--twitter">
+                <title>Link to our twitter</title>
+                <use xlink:href="/images/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page__main">
+    <h1 class="visually-hidden">Bookmark landing page</h1>
+    <section class="promo">
+      <h2 class="promo__title">A simple bookmark manager</h2>
+      <p class="promo__text">
+        A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
+      </p>
+      <div class="promo__buttons">
+        <a class="promo__button button" href="#">Get it on Chrome</a>
+        <a class="promo__button button button--secondary" href="#">Get it on Firefox</a>
+      </div>
+    </section>
+    <section class="features">
+      <h2 class="features__title">Features</h2>
+      <p class="features__lead">
+        Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+      </p>
+      <ul class="features__tabs">
+        <li>
+          <a class="features__tab-link" href="#feature-bookmarking">Simple bookmarking</a>
+        </li>
+        <li>
+          <a class="features__tab-link " href="#feature-searching">Speedy searching</a>
+        </li>
+        <li>
+          <a class="features__tab-link" href="#feature-sharing">Easy sharing</a>
+        </li>
+      </ul>
+      <section class="features__tab-content features__tab-content--bookmark" id="feature-bookmarking">
+        <h3 class="features__subtitle">Bookmark in one click</h3>
+        <p class="features__text">
+          Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+        </p>
+        <a class="features__button button" href="#">More info</a>
+      </section>
+      <section class="features__tab-content features__tab-content--search" id="feature-searching">
+        <h3 class="features__subtitle">Intelligent search</h3>
+        <p class="features__text">
+          Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
+        </p>
+        <a class="features__button button" href="#">More info</a>
+      </section>
+      <section class="features__tab-content features__tab-content--share" id="feature-sharing">
+        <h3 class="features__subtitle">Share your bookmarks</h3>
+        <p class="features__text">
+          Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
+        </p>
+        <a class="features__button button" href="#">More info</a>
+      </section>
+    </section>
+    <section class="extension">
+      <h2 class="extension__title">Download the extension</h2>
+      <p class="extension__lead">
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.
+      </p>
+      <ul class="extension__list">
+        <li class="extension__item extension__item--chrome">
+          <p class="extension__browser">Add to Chrome</p>
+          <p class="extension__version">Minimum version 62</p>
+          <a class="button" href="#">Add & install extension</a>
+        </li>
+        <li class="extension__item extension__item--firefox">
+          <p class="extension__browser">Add to Firefox</p>
+          <p class="extension__version">Minimum version 55</p>
+          <a class="button" href="#">Add & install extension</a>
+        </li>
+        <li class="extension__item extension__item--opera">
+          <p class="extension__browser">Add to Opera</p>
+          <p class="extension__version">Minimum version 46</p>
+          <a class="button" href="#">Add & install extension</a>
+        </li>
+      </ul>
+    </section>
+    <section class="faq">
+      <h2 class="faq__title">Frequently asked questions</h2>
+      <p class="faq__lead">
+        Here are some of our FAQs. If you have any other questions you’d like
+        answered please feel free to email us.
+      </p>
+      <ul class="faq__list">
+        <li>
+          <details class="faq__item">
+            <summary class="faq__question">
+              What is Bookmark?
+              <svg class="faq__icon" aria-hidden="true">
+                <use xlink:href="/images/sprite.svg#arrow"></use>
+              </svg>
+            </summary>
+            <p class="faq__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+            </p>
+          </details>
+        </li>
+        <li>
+          <details class="faq__item">
+            <summary class="faq__question">
+              How can I request a new browser?
+              <svg class="faq__icon" aria-hidden="true">
+                <use xlink:href="/images/sprite.svg#arrow"></use>
+              </svg>
+            </summary>
+            <p class="faq__text">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </p>
+          </details>
+        </li>
+        <li>
+          <details class="faq__item">
+            <summary class="faq__question">
+              Is there a mobile app?
+              <svg class="faq__icon" aria-hidden="true">
+                <use xlink:href="/images/sprite.svg#arrow"></use>
+              </svg>
+            </summary>
+            <p class="faq__text">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.
+            </p>
+          </details>
+        </li>
+        <li>
+          <details class="faq__item">
+            <summary class="faq__question">
+              What about other Chromium browsers?
+              <svg class="faq__icon" aria-hidden="true">
+                <use xlink:href="/images/sprite.svg#arrow"></use>
+              </svg>
+            </summary>
+            <p class="faq__text">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.
+            </p>
+          </details>
+        </li>
+      </ul>
+      <a class="faq__button button" href="#">More Info</a>
+    </section>
+    <section class="newsletter">
+      <h2 class="newsletter__title">Stay up-to-date with what we’re doing</h2>
+      <p class="newsletter__stats">35,000+ already joined</p>
+      <form class="newsletter__form" action="#" method="post" novalidate>
+        <fieldset class="newsletter__field">
+          <input
+            class="newsletter__input"
+            name="newsletter-input"
+            id="newsletter-input"
+            type="email"
+            inputmode="email"
+            autocomplete="email"
+            placeholder="Enter your email address"
+            required
+          >
+        </fieldset>
+        <button class="newsletter__button button button--danger" type="submit">Contact us</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page__footer footer">
+    <div class="footer__container">
+      <a class="footer__logo logo logo--light">
+        <svg class="logo__image">
+          <title>Bookmark logo</title>
+          <use xlink:href="/images/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <ul class="footer__navigation">
+        <li>
+          <a class="footer__navigation-link" href="#">Features</a>
+        </li>
+        <li>
+          <a class="footer__navigation-link" href="#">Pricing</a>
+        </li>
+        <li>
+          <a class="footer__navigation-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <ul class="footer__social social">
+        <li>
+          <a class="social__link" href="#">
+            <svg class="social__icon social__icon--facebook">
+              <title>Link to our facebook</title>
+              <use xlink:href="/images/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link" href="#">
+            <svg class="social__icon social__icon--twitter">
+              <title>Link to our twitter</title>
+              <use xlink:href="/images/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+</html>
